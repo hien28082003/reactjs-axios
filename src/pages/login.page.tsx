@@ -95,7 +95,7 @@ const LoginPage = () => {
               Login
             </LoadingButton>
             <span className="block">
-              Need an account?{" "}
+              Don't have an account?{" "}
               <Link to="/register" className="text-ct-blue-600">
                 Sign Up Here
               </Link>
