@@ -79,20 +79,24 @@ const RegisterPage = () => {
     registerUser(values);
   };
   return (
-    <section className="py-8 bg-ct-blue-600 min-h-screen grid place-items-center">
+    <section className="py-8 bg-gradient-to-t from-ct-f to-ct-t min-h-screen grid place-items-center">
       <div className="w-full">
-        <h1 className="text-4xl xl:text-6xl text-center font-[600] text-ct-yellow-600 mb-4">
-          Welcome to CodevoWeb!
-        </h1>
-        <h2 className="text-lg text-center mb-4 text-ct-dark-200">
-          Sign Up To Get Started!
-        </h2>
+        
         <FormProvider {...methods}>
           <form
             onSubmit={handleSubmit(onSubmitHandler)}
-            className="max-w-md w-full mx-auto overflow-hidden shadow-lg bg-ct-dark-200 rounded-2xl p-8 space-y-5"
+            className="max-w-md w-full mx-auto overflow-hidden shadow-lg bg-ct-dark-100 rounded-2xl p-8 space-y-5"
           >
+            <h1 className="text-4xl xl:text-6xl text-center font-[600] text-ct-yellow-600 mb-4">
+        <Link to="/" >
+              JAPPER
+            </Link>
+        </h1>
+        <h2 className="text-lg text-center mb-4 text-ct-blue-600">
+          Sign Up To Get Started!
+        </h2>
             <FormInput label="Full Name" name="name" />
+            <FormInput label="User Name" name="name" />
             <FormInput label="Email" name="email" type="email" />
             <FormInput label="Password" name="password" type="password" />
             <FormInput

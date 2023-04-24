@@ -4,6 +4,7 @@ import useStore from "../store";
 import Spinner from "./Spinner";
 import { authApi } from "../api/authApi";
 import { GenericResponse } from "../api/types";
+import { LoadingButton } from "../components/LoadingButton";
 
 const Header = () => {
   const store = useStore();
@@ -30,8 +31,8 @@ const Header = () => {
       <header className="bg-white h-20">
         <nav className="h-full flex justify-between container items-center">
           <div>
-            <Link to="/" className="text-ct-dark-600 text-2xl font-semibold">
-              CodevoWeb
+            <Link to="/" className="text-ct-yellow-600 text-2xl font-semibold">
+              JAPPER
             </Link>
           </div>
           <ul className="flex items-center gap-4">
@@ -43,9 +44,13 @@ const Header = () => {
             {!user && (
               <>
                 <li>
+               
                   <Link to="/register" className="text-ct-dark-600">
-                    SignUp
+                    
+                    Sign Up
+                  
                   </Link>
+                  
                 </li>
                 <li>
                   <Link to="/login" className="text-ct-dark-600">
