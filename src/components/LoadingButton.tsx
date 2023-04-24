@@ -11,7 +11,7 @@ type LoadingButtonProps = {
 
 export const LoadingButton: React.FC<LoadingButtonProps> = ({
   textColor = "text-white",
-  btnColor = "bg-ct-yellow-600",
+  btnColor = "bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ",
   children,
   loading = false,
 }) => {

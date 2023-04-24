@@ -67,23 +67,27 @@ const LoginPage = () => {
     loginUser(values);
   };
   return (
-    <section className="bg-ct-blue-600 min-h-screen grid place-items-center">
+    <section className="bg-gradient-to-t from-ct-f to-ct-t">
       <div className="w-full">
-        <h1 className="text-4xl xl:text-6xl text-center font-[600] text-ct-yellow-600 mb-4">
-          Welcome Back
-        </h1>
-        <h2 className="text-lg text-center mb-4 text-ct-dark-200">
-          Login to have access
-        </h2>
+        
         <FormProvider {...methods}>
+          
           <form
             onSubmit={handleSubmit(onSubmitHandler)}
-            className="max-w-md w-full mx-auto overflow-hidden shadow-lg bg-ct-dark-200 rounded-2xl p-8 space-y-5"
+            className="max-w-md w-full mx-auto overflow-hidden shadow-lg bg-ct-dark-100 rounded-2xl p-8 space-y-5"
           >
+            <h1 className="text-4xl xl:text-6xl text-center font-[600] text-ct-yellow-600 mb-4">
+        <Link to="/" >
+              JAPPER
+            </Link>
+        </h1>
+       <h2 className="text-lg text-center mb-4 text-ct-blue-600">
+          Login to have access
+        </h2>
             <FormInput label="Email" name="email" type="email" />
             <FormInput label="Password" name="password" type="password" />
 
-            <div className="text-right">
+            <div className="text-right text-ct-blue-600">
               <Link to="/forgotpassword" className="">
                 Forgot Password?
               </Link>
